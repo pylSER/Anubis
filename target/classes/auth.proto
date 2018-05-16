@@ -1,0 +1,30 @@
+syntax="proto3";
+
+package com.anubis.sso;
+option java_multiple_files=true;
+
+service Auth{
+    rpc auth(TokenInfo) returns (AuthResult);
+    rpc login(UserInfo) returns (LoginResult);
+    rpc register(UserInfo) returns (RegResult);
+}
+
+message TokenInfo{
+    string token=1;
+}
+message AuthResult{
+    bool isAuthOK=1;
+}
+
+message UserInfo{
+    string userName=1;
+    string password=2;
+}
+
+message LoginResult{
+    bool isLoginOK=1;
+}
+
+message RegResult{
+    bool isRegOK=1;
+}
