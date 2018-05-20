@@ -23,9 +23,4 @@ public class SSOConfig {
     public static int getPort(){
         return port;
     }
-
-
-
-
-
 }

@@ -1,11 +1,12 @@
 package com.anubis.sso;
 
 import io.grpc.stub.StreamObserver;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SSOServiceImpl extends AuthGrpc.AuthImplBase{
 
-    private final static Logger logger=Logger.getLogger(SSOServiceImpl.class);
+    private final static Logger logger= LoggerFactory.getLogger(SSOServiceImpl.class);
 
     @Override
     public void auth(TokenInfo request, StreamObserver<AuthResult> responseObserver) {
@@ -18,9 +19,13 @@ public class SSOServiceImpl extends AuthGrpc.AuthImplBase{
 
     @Override
     public void login(UserInfo request, StreamObserver<LoginResult> responseObserver) {
-        super.login(request, responseObserver);
+        logger.info("now is in the login(),username:{},password:{}",request.getUserName(),request.getPassword());
 
-        logger.info("now is in the login()");
+        LoginResult result=LoginResult.newBuilder().setIsLoginOK(false).build();
+
+        responseObserver.onNext(result);
+
+        responseObserver.onCompleted();
     }
 
     @Override

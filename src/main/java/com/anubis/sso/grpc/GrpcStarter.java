@@ -1,29 +1,33 @@
-package com.anubis.sso;
+package com.anubis.sso.grpc;
 
 import com.amihaiemil.camel.Yaml;
 import com.amihaiemil.camel.YamlMapping;
+import com.anubis.sso.SSOConfig;
+import com.anubis.sso.SSOServiceImpl;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import org.apache.log4j.Logger;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
 
-
-public class Entrance {
+@Component
+public class GrpcStarter {
     private static final String configFilePath="config.yml";
+    private final static Logger logger= LoggerFactory.getLogger(GrpcStarter.class);
 
-    private final static Logger logger=Logger.getLogger(Entrance.class);
-
-    public static void main(String[] args){
+    @Async
+    protected void startServer(){
         if(initConfig()){
             Server server= ServerBuilder.forPort(SSOConfig.getPort()).addService(new SSOServiceImpl()).build();
             try {
                 server.start();
 
 
-                logger.info("Server Started!");
+                logger.info("Server Started at {}!",SSOConfig.getPort());
 
 
                 server.awaitTermination();
@@ -37,9 +41,9 @@ public class Entrance {
     }
 
 
-    private static boolean initConfig(){
+    private boolean initConfig(){
         try {
-            File configFile=new File(Entrance.class.getResource("../../../").getPath()+configFilePath);
+            File configFile=new File(GrpcStarter.class.getResource("../../../../").getPath()+configFilePath);
             YamlMapping yamlMapping = Yaml.createYamlInput(configFile).readYamlMapping();
             String portStr=yamlMapping.string("port");
             String expiredMinutesStr=yamlMapping.string("expiredMinutes");
@@ -57,5 +61,4 @@ public class Entrance {
             return false;
         }
     }
-
 }
