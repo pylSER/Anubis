@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.io.File;
 import java.io.IOException;
 
@@ -19,13 +20,15 @@ public class GrpcStarter {
     private static final String configFilePath="config.yml";
     private final static Logger logger= LoggerFactory.getLogger(GrpcStarter.class);
 
+    @Resource
+    SSOServiceImpl ssoService;
+
     @Async
     protected void startServer(){
         if(initConfig()){
-            Server server= ServerBuilder.forPort(SSOConfig.getPort()).addService(new SSOServiceImpl()).build();
+            Server server= ServerBuilder.forPort(SSOConfig.getPort()).addService(ssoService).build();
             try {
                 server.start();
-
 
                 logger.info("Server Started at {}!",SSOConfig.getPort());
 
