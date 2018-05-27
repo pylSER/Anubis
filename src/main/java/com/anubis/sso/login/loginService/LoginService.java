@@ -5,5 +5,5 @@ import com.anubis.sso.UserInfo;
 public interface LoginService {
     public boolean verifyUserNameAndPassword(UserInfo userInfo);
 
-    public String generateToken();
+    public String generateAndSaveToken(String username);
 }

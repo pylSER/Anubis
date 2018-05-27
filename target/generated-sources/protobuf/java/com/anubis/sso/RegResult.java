@@ -17,6 +17,8 @@ private static final long serialVersionUID = 0L;
   }
   private RegResult() {
     isRegOK_ = false;
+    isUserExists_ = false;
+    isPwdTooEasy_ = false;
   }
 
   @java.lang.Override
@@ -55,6 +57,16 @@ private static final long serialVersionUID = 0L;
             isRegOK_ = input.readBool();
             break;
           }
+          case 16: {
+
+            isUserExists_ = input.readBool();
+            break;
+          }
+          case 24: {
+
+            isPwdTooEasy_ = input.readBool();
+            break;
+          }
         }
       }
     } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -88,6 +100,24 @@ private static final long serialVersionUID = 0L;
     return isRegOK_;
   }
 
+  public static final int ISUSEREXISTS_FIELD_NUMBER = 2;
+  private boolean isUserExists_;
+  /**
+   * <code>bool isUserExists = 2;</code>
+   */
+  public boolean getIsUserExists() {
+    return isUserExists_;
+  }
+
+  public static final int ISPWDTOOEASY_FIELD_NUMBER = 3;
+  private boolean isPwdTooEasy_;
+  /**
+   * <code>bool isPwdTooEasy = 3;</code>
+   */
+  public boolean getIsPwdTooEasy() {
+    return isPwdTooEasy_;
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -103,6 +133,12 @@ private static final long serialVersionUID = 0L;
     if (isRegOK_ != false) {
       output.writeBool(1, isRegOK_);
     }
+    if (isUserExists_ != false) {
+      output.writeBool(2, isUserExists_);
+    }
+    if (isPwdTooEasy_ != false) {
+      output.writeBool(3, isPwdTooEasy_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -114,6 +150,14 @@ private static final long serialVersionUID = 0L;
     if (isRegOK_ != false) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(1, isRegOK_);
+    }
+    if (isUserExists_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(2, isUserExists_);
+    }
+    if (isPwdTooEasy_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(3, isPwdTooEasy_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -133,6 +177,10 @@ private static final long serialVersionUID = 0L;
     boolean result = true;
     result = result && (getIsRegOK()
         == other.getIsRegOK());
+    result = result && (getIsUserExists()
+        == other.getIsUserExists());
+    result = result && (getIsPwdTooEasy()
+        == other.getIsPwdTooEasy());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -147,6 +195,12 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + ISREGOK_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getIsRegOK());
+    hash = (37 * hash) + ISUSEREXISTS_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsUserExists());
+    hash = (37 * hash) + ISPWDTOOEASY_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsPwdTooEasy());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -278,6 +332,10 @@ private static final long serialVersionUID = 0L;
       super.clear();
       isRegOK_ = false;
 
+      isUserExists_ = false;
+
+      isPwdTooEasy_ = false;
+
       return this;
     }
 
@@ -301,6 +359,8 @@ private static final long serialVersionUID = 0L;
     public com.anubis.sso.RegResult buildPartial() {
       com.anubis.sso.RegResult result = new com.anubis.sso.RegResult(this);
       result.isRegOK_ = isRegOK_;
+      result.isUserExists_ = isUserExists_;
+      result.isPwdTooEasy_ = isPwdTooEasy_;
       onBuilt();
       return result;
     }
@@ -344,6 +404,12 @@ private static final long serialVersionUID = 0L;
       if (other == com.anubis.sso.RegResult.getDefaultInstance()) return this;
       if (other.getIsRegOK() != false) {
         setIsRegOK(other.getIsRegOK());
+      }
+      if (other.getIsUserExists() != false) {
+        setIsUserExists(other.getIsUserExists());
+      }
+      if (other.getIsPwdTooEasy() != false) {
+        setIsPwdTooEasy(other.getIsPwdTooEasy());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -394,6 +460,58 @@ private static final long serialVersionUID = 0L;
     public Builder clearIsRegOK() {
       
       isRegOK_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isUserExists_ ;
+    /**
+     * <code>bool isUserExists = 2;</code>
+     */
+    public boolean getIsUserExists() {
+      return isUserExists_;
+    }
+    /**
+     * <code>bool isUserExists = 2;</code>
+     */
+    public Builder setIsUserExists(boolean value) {
+      
+      isUserExists_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool isUserExists = 2;</code>
+     */
+    public Builder clearIsUserExists() {
+      
+      isUserExists_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isPwdTooEasy_ ;
+    /**
+     * <code>bool isPwdTooEasy = 3;</code>
+     */
+    public boolean getIsPwdTooEasy() {
+      return isPwdTooEasy_;
+    }
+    /**
+     * <code>bool isPwdTooEasy = 3;</code>
+     */
+    public Builder setIsPwdTooEasy(boolean value) {
+      
+      isPwdTooEasy_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool isPwdTooEasy = 3;</code>
+     */
+    public Builder clearIsPwdTooEasy() {
+      
+      isPwdTooEasy_ = false;
       onChanged();
       return this;
     }

@@ -11,4 +11,14 @@ public interface RegResultOrBuilder extends
    * <code>bool isRegOK = 1;</code>
    */
   boolean getIsRegOK();
+
+  /**
+   * <code>bool isUserExists = 2;</code>
+   */
+  boolean getIsUserExists();
+
+  /**
+   * <code>bool isPwdTooEasy = 3;</code>
+   */
+  boolean getIsPwdTooEasy();
 }

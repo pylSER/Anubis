@@ -23,8 +23,11 @@ message UserInfo{
 
 message LoginResult{
     bool isLoginOK=1;
+    string token=2;
 }
 
 message RegResult{
     bool isRegOK=1;
+    bool isUserExists=2;
+    bool isPwdTooEasy=3;
 }

@@ -11,6 +11,7 @@ public class SsoinfoEntity {
     private String password;
     private Timestamp regTime;
     private Timestamp lastLoginTime;
+    private String token;
 
     @Id
     @Column(name = "id")
@@ -23,7 +24,7 @@ public class SsoinfoEntity {
     }
 
     @Basic
-    @Column(name = "userName")
+    @Column(name = "user_name")
     public String getUserName() {
         return userName;
     }
@@ -43,7 +44,7 @@ public class SsoinfoEntity {
     }
 
     @Basic
-    @Column(name = "regTime")
+    @Column(name = "reg_time")
     public Timestamp getRegTime() {
         return regTime;
     }
@@ -53,7 +54,7 @@ public class SsoinfoEntity {
     }
 
     @Basic
-    @Column(name = "lastLoginTime")
+    @Column(name = "last_login_time")
     public Timestamp getLastLoginTime() {
         return lastLoginTime;
     }
@@ -87,5 +88,15 @@ public class SsoinfoEntity {
         result = 31 * result + (regTime != null ? regTime.hashCode() : 0);
         result = 31 * result + (lastLoginTime != null ? lastLoginTime.hashCode() : 0);
         return result;
+    }
+
+    @Basic
+    @Column(name = "token")
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }

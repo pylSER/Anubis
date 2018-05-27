@@ -1,6 +1,7 @@
 package com.anubis.sso;
 
 import com.anubis.sso.login.loginService.LoginService;
+import com.anubis.sso.register.registerService.RegisterService;
 import io.grpc.stub.StreamObserver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,9 @@ public class SSOServiceImpl extends AuthGrpc.AuthImplBase{
 
     @Resource
     LoginService loginService;
+
+    @Resource
+    RegisterService registerService;
 
 
     @Override
@@ -32,8 +36,16 @@ public class SSOServiceImpl extends AuthGrpc.AuthImplBase{
 
         boolean isPasswordRight=loginService.verifyUserNameAndPassword(request);
 
+        String token="";
 
-        LoginResult result=LoginResult.newBuilder().setIsLoginOK(isPasswordRight).build();
+        if(isPasswordRight){
+           token=loginService.generateAndSaveToken(request.getUserName());
+        }
+
+
+        LoginResult result=LoginResult.newBuilder()
+                .setIsLoginOK(isPasswordRight)
+                .setToken(token).build();
 
         responseObserver.onNext(result);
 
@@ -42,8 +54,12 @@ public class SSOServiceImpl extends AuthGrpc.AuthImplBase{
 
     @Override
     public void register(UserInfo request, StreamObserver<RegResult> responseObserver) {
-        super.register(request, responseObserver);
+        logger.info("now is in the register()username:{},password:{}",request.getUserName(),request.getPassword());
 
-        logger.info("now is in the register()");
+        RegResult regResult=registerService.register(request);
+
+        responseObserver.onNext(regResult);
+
+        responseObserver.onCompleted();
     }
 }

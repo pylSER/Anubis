@@ -11,4 +11,14 @@ public interface LoginResultOrBuilder extends
    * <code>bool isLoginOK = 1;</code>
    */
   boolean getIsLoginOK();
+
+  /**
+   * <code>string token = 2;</code>
+   */
+  java.lang.String getToken();
+  /**
+   * <code>string token = 2;</code>
+   */
+  com.google.protobuf.ByteString
+      getTokenBytes();
 }
