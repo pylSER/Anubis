@@ -14,4 +14,6 @@ public interface DaoService extends JpaRepository<SsoinfoEntity,Long>{
 
     @Override
     SsoinfoEntity saveAndFlush(SsoinfoEntity s);
+
+    SsoinfoEntity findSsoinfoEntityByToken(String token);
 }

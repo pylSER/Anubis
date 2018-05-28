@@ -1,5 +1,6 @@
 package com.anubis.sso;
 
+import com.anubis.sso.auth.authService.AuthService;
 import com.anubis.sso.login.loginService.LoginService;
 import com.anubis.sso.register.registerService.RegisterService;
 import io.grpc.stub.StreamObserver;
@@ -20,13 +21,23 @@ public class SSOServiceImpl extends AuthGrpc.AuthImplBase{
     @Resource
     RegisterService registerService;
 
+    @Resource
+    AuthService authService;
+
 
     @Override
     public void auth(TokenInfo request, StreamObserver<AuthResult> responseObserver) {
-        super.auth(request, responseObserver);
-
         logger.info("now is in the auth()");
 
+
+        boolean authResult=authService.auth(request.getToken());
+
+
+        AuthResult result=AuthResult.newBuilder().setIsAuthOK(authResult).build();
+
+        responseObserver.onNext(result);
+
+        responseObserver.onCompleted();
 
     }
 
