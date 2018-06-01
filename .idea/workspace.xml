@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Anubis:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f8cc3f35-bb9f-416b-beab-285c325151d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/anubis/sso/auth/authService/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/anubis/sso/auth/authServiceImpl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amihaiemil_web_camel_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anubis/sso/SSOServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anubis/sso/SSOServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anubis/sso/dao/DaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anubis/sso/dao/DaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anubis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Anubis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Anubis-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Anubis-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,8 +73,8 @@
       <file leaf-file-name="SSOServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/SSOServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="1292">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,29 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/proto/auth.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/auth/authService/AuthService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/auth/authServiceImpl/AuthServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+            <state relative-caret-position="494">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,11 +94,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrpcStarter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrpcStarter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcStarter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            <state relative-caret-position="266">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#731#745#1" expanded="true" />
+                <element signature="e#788#812#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -109,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/SSOConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -117,8 +138,8 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="152">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -135,20 +156,11 @@
       <file leaf-file-name="LoginServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/login/loginServiceImpl/LoginServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="56" column="60" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="60" />
+            <state relative-caret-position="836">
+              <caret line="56" column="60" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EncryptService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/encrypt/encryptService/EncryptService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -189,9 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/encrypt/encryptServiceImpl/MD5EncryptService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/encrypt/encryptServiceImpl/NoEncryptService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/encrypt/EncryptFactory.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcStarter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/login/loginService/LoginService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/login/loginServiceImpl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/proto/auth.proto" />
@@ -204,6 +213,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/dao/DaoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/SSOServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/auth/authServiceImpl/AuthServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcStarter.java" />
       </list>
     </option>
   </component>
@@ -228,7 +240,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
@@ -242,9 +254,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,69 +306,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anubis" type="462c0819:PsiDirectoryNode" />
               <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="authService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="authServiceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="encrypt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="encrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="encryptService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
               <item name="grpc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -366,52 +314,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="loginService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="loginServiceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anubis" type="462c0819:PsiDirectoryNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="registerServiceImpl" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
@@ -427,10 +330,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Anubis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Anubis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,8 +349,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
@@ -513,6 +423,10 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Anubis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.anubis.Application" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -536,6 +450,7 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Application.Entrance" />
       <item itemvalue="Application.Application" />
     </list>
@@ -569,14 +484,17 @@
       <workItem from="1527045708535" duration="500000" />
       <workItem from="1527400162404" duration="6770000" />
       <workItem from="1527497234824" duration="4823000" />
+      <workItem from="1527666353988" duration="35000" />
+      <workItem from="1527819690309" duration="2085000" />
+      <workItem from="1527829851708" duration="602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38782000" />
+    <option name="totallyTimeSpent" value="41504000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -597,14 +515,15 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40212265" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40212265" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Persistence" order="3" sideWeight="0.22169812" side_tool="true" visible="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7783019" visible="true" weight="0.25" />
+      <window_info id="Persistence" order="3" sideWeight="0.22523585" side_tool="true" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7747642" visible="true" weight="0.25" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4976415" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -612,7 +531,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -770,13 +688,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bd30fd6d-95b5-4783-be8e-872e020b7a58/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-core/1.12.0/grpc-core-1.12.0.jar!/io/grpc/Server.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -788,20 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="61" column="17" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -844,10 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,9 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="52" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -926,38 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/SSOConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/SSOServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="1292">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -966,8 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/login/loginServiceImpl/LoginServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="56" column="60" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="60" />
+        <state relative-caret-position="836">
+          <caret line="56" column="60" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -976,10 +838,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/auth/authServiceImpl/AuthServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        <state relative-caret-position="494">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/SSOConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anubis/sso/grpc/GrpcStarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#731#745#1" expanded="true" />
+            <element signature="e#788#812#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -990,10 +906,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Anubis:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1036,11 +954,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA|Anubis</last-edited>
+          <last-edited>Anubis</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
